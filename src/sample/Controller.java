@@ -10,18 +10,11 @@ public class Controller
 
     long time = System.nanoTime();
     public void addOne(ActionEvent actionEvent) {
-        if (timer() == 0) {
+        if (((System.nanoTime() - time)/(100000000))!=10.0) {
             score++;
             points.setText("Points: " + score);
         }
     }
 
-    public int timer()
-    {
-        double a=(double)(System.nanoTime() - time)/(100000000);
-        if(a==10.0) {
-            return -1;
-        }
-        return 0;
-    }
+
 }
