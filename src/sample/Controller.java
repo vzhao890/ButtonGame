@@ -13,8 +13,8 @@ public class Controller
 
     public void addOne(ActionEvent actionEvent) {
         timer();
-            score++;
-            points.setText("Points: " + score);
+        score++;
+        points.setText("Points: " + score);
 
 
     }
