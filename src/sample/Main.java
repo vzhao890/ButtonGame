@@ -11,10 +11,7 @@ import javafx.stage.Stage;
 import java.util.Random;
 
 public class Main extends Application {
-    static Stage window;
-    static Scene s1;
-    static Scene s2;
-    @Override
+
     public void start(Stage primaryStage) throws Exception{
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
