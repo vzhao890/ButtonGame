@@ -12,8 +12,15 @@ public class Controller
     public boolean count = true;
 
     public void addOne(ActionEvent actionEvent) {
+        timer();
+        if(count = true) {
             score++;
             points.setText("Points: " + score);
+        }
+        else
+        {
+            points.setText("Your score is " + score);
+        }
 
     }
     public void timer()
